@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #f0f0f0;
+    --orange: #f0730d;
+    --darkOrange: #ea580c;
+    --padding: 50px;
+}
+
+html{
+    background: url(bg-image.jpg) no-repeat center;
+    background-size: cover;
+    color: var(--white);
+}
+
+body{
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: rgba(0,0,0,0.6);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--darkOrange);
+}
+
+.navLinks{
+    display: flex;
+    gap: 60px;
+}
+
+.navLinks li{
+    list-style-type: none;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.inputGroup{
+    border: 1px solid var(--darkOrange);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.inputGroup input{
+    background: transparent;
+    width: 20vw;
+    border: none;
+    padding: 10px;
+}
+
+::placeholder{
+    color: var(--white);
+    
+}
+
+.inputButton{
+    background-color: var(--darkOrange);
+    border: none;
+    padding: 10px 12px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menuBar p{
+    height: 3px;
+    width: 20%;
+    color: var(--darkOrange);
+    
+}
+
+@media screen and (min-width:768px){
+    .menuBar p{
+        display: none;
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto 50px;
+}
+
+
+
+.boldText{
+    font-size: 3rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+}
+
+.txtOrange{
+    color: var(--orange);
+}
+
+.content p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.joinUs{
+    padding: 10px 40px;
+    width: 20%;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form{
+    background-color: black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.loginWhite{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: var(--orange);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.underline-input input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--orange);
+    background: transparent;
+    padding: 10px 0;
+    margin: 5px;
+}
+
+.loginOrange{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.inquiry{
+    margin: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inquiry a{
+    color: var(--orange);
+    text-decoration: none;
+
+}
+
+.txtLogin{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.socials{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px){
+    html{
+        background: url(bg-image.jpg) no-repeat center;
+        background-size: cover;
+        color: var(--white);
+    }
+
+    .navLinks{
+        display: none;
+        
+    }
+    .inputGroup{
+        display: none;
+        
+    } 
+    .menuBar{
+        border: 1px solid var(--orange);
+        width: 20%; 
+        padding: 5px; 
+    }
+
+    .menuBar :hover{
+        background-color: var(--darkOrange);
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .boldText{
+        font-size: 40px;
+    }
+
+    .form{
+        margin-top: 30px;
+    }
+
+    .joinUs{
+        width: 100%;
+        background-color: var(--orange);
+        
+    }
+
+    .hero{
+        padding: 10px;
+    margin: auto 50px;
+    }
+
+    nav{
+        margin: auto 20px;
+    padding: 20px;
+    }
+    
+}
